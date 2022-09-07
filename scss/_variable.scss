@@ -1,0 +1,25 @@
+@mixin flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin ibarra {
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin public{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin public-700{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+$text-color:#33323D;
+$hover-text: #5FB4A2;

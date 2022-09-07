@@ -1,0 +1,225 @@
+.contact {
+  display: flex;
+  border-top: 1px solid rgb(0, 0, 0, 0.15);
+  margin-top: 100px;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  &--title {
+    font-size: 40px;
+    line-height: 42px;
+    @include ibarra;
+    color: #33323D;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form {
+    display: block;
+    width: 635px;
+    font-size: 13px;
+
+    &--label {
+      font-size: 13px;
+      line-height: 30px;
+      @include public-700;
+
+    }
+
+    &--input {
+      width: 635px;
+      padding: 13px;
+      border-radius: 5px;
+      border: none;
+      background-color: #E6E6E7;
+      margin-bottom: 20px;
+    }
+
+    &--textarea {
+      width: 635px;
+      padding: 13px;
+      border-radius: 5px;
+      border: none;
+      background-color: #E6E6E7;
+      margin-bottom: 20px;
+      height: 95px;
+      resize: none;
+    }
+
+    &--btn {
+      padding: 12px 32px;
+      font-size: 11px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #FFFFFF;
+      @include public;
+      background-color: #203A4C;
+      border: none;
+      &:hover{
+        background-color: #5FB4A2;
+        color: #203A4C;
+      }
+      &:active{
+        background-color: #D2D8DB;
+
+      } 
+    }
+  }
+
+}
+
+@media only screen and(max-width: 768px){
+  .contact {
+    display: block;
+    border-top: 1px solid rgb(0, 0, 0, 0.15);
+    margin-top: 100px;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    &--title {
+      font-size: 40px;
+      line-height: 42px;
+      @include ibarra;
+      color: #33323D;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+  
+    .form {
+      display: block;
+      width: 710px;
+      font-size: 13px;
+  
+      &--label {
+        font-size: 13px;
+        line-height: 30px;
+        @include public-700;
+  
+      }
+  
+      &--input {
+        width: 710px;
+        padding: 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: #E6E6E7;
+        margin-bottom: 20px;
+      }
+  
+      &--textarea {
+        width: 710px;
+        padding: 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: #E6E6E7;
+        margin-bottom: 20px;
+        height: 105px;
+        resize: none;
+      }
+  
+      &--btn {
+        padding: 15px 50px;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #FFFFFF;
+        @include public;
+        background-color: #203A4C;
+        border: none;
+        &:hover{
+          background-color: #5FB4A2;
+          color: #203A4C;
+        }
+        &:active{
+          background-color: #D2D8DB;
+  
+        } 
+      }
+    }
+  
+  }
+}
+
+
+@media only screen and(max-width: 375px){
+  .contact {
+    display: block;
+    border-top: 1px solid rgb(0, 0, 0, 0.15);
+    margin-top: 100px;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    &--title {
+      font-size: 40px;
+      line-height: 42px;
+      @include ibarra;
+      color: #33323D;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  
+    .form {
+      display: block;
+      width: 350px;
+      font-size: 13px;
+  
+      &--label {
+        font-size: 13px;
+        line-height: 30px;
+        @include public-700;
+  
+      }
+  
+      &--input {
+        width: 350px;
+        padding: 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: #E6E6E7;
+        margin-bottom: 20px;
+      }
+  
+      &--textarea {
+        width: 350px;
+        padding: 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: #E6E6E7;
+        margin-bottom: 20px;
+        height: 95px;
+        resize: none;
+      }
+  
+      &--btn {
+        padding: 15px 30px;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #FFFFFF;
+        @include public;
+        background-color: #203A4C;
+        border: none;
+        &:hover{
+          background-color: #5FB4A2;
+          color: #203A4C;
+        }
+        &:active{
+          background-color: #D2D8DB;
+  
+        } 
+      }
+    }
+  
+  }
+}

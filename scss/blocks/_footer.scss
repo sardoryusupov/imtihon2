@@ -1,0 +1,149 @@
+footer {
+  background-color: $text-color;
+}
+
+.footer-div {
+  @include flex-box;
+  padding: 25px 0px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &__ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      &__li {
+        margin-left: 44px;
+
+        &--link {
+          text-decoration: none;
+          color: #fff;
+          @include public;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $hover-text;
+          }
+        }
+      }
+    }
+  }
+
+  &__ul2 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    &__li {
+      margin-left: 15px;
+     
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  footer {
+    background-color: $text-color;
+  }
+
+  .footer-div {
+    @include flex-box;
+    padding: 25px 0px;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+
+      &__ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &__li { 
+          margin-left: 44px;
+
+          &--link {
+            text-decoration: none;
+            color: #fff;
+            @include public;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            &:hover {
+              color: $hover-text;
+            }
+          }
+        }
+      }
+    }
+
+    &__ul2 {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0px;
+      padding: 0;
+      &__li {
+        margin-left: 15px;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media only screen and(max-width: 375px) {
+  footer {
+    background-color: $text-color;
+  }
+
+  .footer-div {
+    display: block;
+    justify-content: center;
+    padding: 40px 0px;
+    &__logo {
+      display: block;
+      &__link{
+        display: block;
+        margin-bottom: 40px;
+        &--img{
+          display: flex;
+          margin: 0px auto;
+        }
+      }
+      &__ul{
+          display: block;
+          text-align: center;
+        &__li{
+          margin: 0px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__ul2{
+      justify-content: center;
+      &__li{
+        margin: 0px;
+        margin: 0px 7px;
+      }
+    }
+  }
+
+}

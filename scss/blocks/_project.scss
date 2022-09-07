@@ -1,0 +1,117 @@
+.project {
+  @include flex-box;
+  padding-bottom: 100px;
+  &--title {
+    @include ibarra;
+    font-size: 40px;
+    line-height: 42px;
+    width: 332px;
+  }
+
+  &--line {
+    border: 1px solid #000;
+    width: 550px;
+    opacity: 0.15;
+  }
+
+  &--link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $text-color;
+    padding: 17px 35px;
+    border: 1px solid $text-color;
+    &:hover{
+      background-color: $text-color;
+      color: #fff;
+    }
+    &:active{
+      background-color: #fff;
+      color: $text-color;
+      border: 1px solid #33323d8b;
+    }
+  }
+}
+
+
+@media only screen and (max-width:768px){
+  .project {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    &--title {
+      @include ibarra;
+      font-size: 40px;
+      line-height: 42px;
+      width: 350px;
+    }
+  
+    &--line {
+      width: 113px;
+    }
+  
+    &--link {
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $text-color;
+      padding: 17px 35px;
+      border: 1px solid $text-color;
+      &:hover{
+        background-color: $text-color;
+        color: #fff;
+      }
+      &:active{
+        background-color: #fff;
+        color: $text-color;
+        border: 1px solid #33323d8b;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .project {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    &--title {
+      @include ibarra;
+      font-size: 40px;
+      line-height: 42px;
+      width: 310px;
+      text-align: center;
+
+    }
+    &--line{
+      display: none;
+    }
+  
+  
+    &--link {
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $text-color;
+      padding: 17px 35px;
+      border: 1px solid $text-color;
+      &:hover{
+        background-color: $text-color;
+        color: #fff;
+      }
+      &:active{
+        background-color: #fff;
+        color: $text-color;
+        border: 1px solid #33323d8b;
+      }
+    }
+  }
+}

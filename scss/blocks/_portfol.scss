@@ -1,0 +1,207 @@
+.people {
+  display: flex;
+  padding-bottom: 250px;
+
+  &__div-img {
+    margin-right: 150px;
+
+    &--people {
+      display: block;
+    }
+
+    &--people-tab {
+      display: none;
+    }
+  }
+
+
+
+  &__div {
+    width: 350px;
+    height: 600px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.508);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+
+    &--title {
+      @include ibarra;
+      font-size: 40px;
+      line-height: 42px;
+      margin: 50px 0px 30px;
+    }
+
+    &--text {
+      @include public;
+      font-size: 16px;
+      line-height: 30px;
+      opacity: 0.8;
+      margin: 0px;
+      margin-bottom: 45px;
+    }
+
+    &--link {
+      @include public;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 17px 35px;
+      border: 1px solid #000;
+      margin-top: 50px;
+      color: #33323D;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      &:active {
+        border: 1px solid #33323d61;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .people {
+    display: flex;
+    padding-bottom: 200px;
+
+    &__div-img {
+      margin-right: 70px;
+
+      &--people {
+        display: none;
+      }
+
+      &--people-tab {
+        display: block;
+      }
+    }
+
+    &__div {
+      width: 340px;
+      height: 600px;
+
+      border-top: 1px solid rgba(0, 0, 0, 0.508);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+
+      &--title {
+        @include ibarra;
+        font-size: 40px;
+        line-height: 42px;
+        margin: 50px 0px 30px;
+      }
+
+      &--text {
+        @include public;
+        font-size: 16px;
+        line-height: 30px;
+        opacity: 0.8;
+        margin: 0px;
+        margin-bottom: 45px;
+      }
+
+      &--link {
+        @include public;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 17px 35px;
+        border: 1px solid #000;
+        margin-top: 50px;
+        color: #33323D;
+
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+
+        &:active {
+          border: 1px solid #33323d61;
+          background-color: #fff;
+          color: #000;
+        }
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .people {
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+    padding: 0px 10px;
+    padding-bottom: 50px;
+
+    &__div-img {
+      margin-right: 70px;
+      margin: 0px auto;
+
+      &--people {
+        display: block;
+      }
+
+      &--people-tab {
+        display: none;
+      }
+    }
+
+    &__div {
+      width: 340px;
+      height: 600px;
+      margin-top: 30px;
+      border-top: 1px solid rgba(0, 0, 0, 0.508);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+
+      &--title {
+        @include ibarra;
+        font-size: 40px;
+        line-height: 42px;
+        margin: 50px 0px 30px;
+      }
+
+      &--text {
+        @include public;
+        font-size: 16px;
+        line-height: 30px;
+        opacity: 0.8;
+        margin: 0px;
+        margin-bottom: 45px;
+      }
+
+      &--link {
+        @include public;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 17px 35px;
+        border: 1px solid #000;
+        margin-top: 50px;
+        color: #33323D;
+
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+
+        &:active {
+          border: 1px solid #33323d61;
+          background-color: #fff;
+          color: #000;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,205 @@
+.hero {
+  &--img {
+    width: 1200px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 150px;
+  }
+
+  &--img-table {
+    display: none;
+  }
+
+  &__div {
+
+    position: absolute;
+    top: 377px;
+    background-color: #fff;
+    z-index: 2;
+    padding-right: 55px;
+
+    &--title {
+      @include ibarra;
+      font-size: 50px;
+      line-height: 50px;
+      color: $text-color;
+      width: 395px;
+      padding-bottom: 20px;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #203A4C;
+      background-color: #203A4C;
+      margin: 0;
+      color: #fff;
+      @include public;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+      padding: 17px 45px 17px 85px;
+
+      &--img {
+        top: 0px;
+        left: 0px;
+        position: absolute;
+      }
+      &:hover{
+        background-color: #5FB4A2;
+        border: 1px solid #5FB4A2;
+      }
+      &:active{
+        background-color: #D2D8DB;
+        border: 1px solid #D2D8DB;
+        color: $text-color;
+      }
+    }
+
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    &--img {
+      display: none;
+    }
+
+    &--img-table {
+      display: block;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      padding-bottom: 100px;
+    }
+
+    &__div {
+
+      position: absolute;
+      top: 463px;
+      background-color: #fff;
+      z-index: 2;
+      padding-right: 55px;
+
+      &--title {
+        @include ibarra;
+        font-size: 40px;
+        line-height: 42px;
+        color: $text-color;
+        width: 500px;
+        padding-bottom: 20px;
+      }
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #203A4C;
+        background-color: #203A4C;
+        margin: 0;
+        color: #fff;
+        @include public;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        padding: 17px 45px 17px 85px;
+  
+        &--img {
+          top: 0px;
+          left: 0px;
+          position: absolute;
+        }
+        &:hover{
+          background-color: #5FB4A2;
+          border: 1px solid #5FB4A2;
+        }
+        &:active{
+          background-color: #D2D8DB;
+          border: 1px solid #D2D8DB;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero {
+    padding: 0px 10px;
+
+    &--img {
+      display: none;
+    }
+
+    &--img-table {
+      display: block;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      padding: 0px;
+      padding-bottom: 20px;
+    }
+
+    &__div {
+      padding: 0;
+      position: absolute;
+      top: 383px;
+      background-color: #fff;
+      z-index: 2;
+
+      &--title {
+        @include ibarra;
+        font-size: 40px;
+        line-height: 42px;
+        color: $text-color;
+        width: 311px;
+        margin: 0;
+      }
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #203A4C;
+        background-color: #203A4C;
+        margin: 0;
+        color: #fff;
+        @include public;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        padding: 17px 45px 17px 85px;
+  
+        &--img {
+          top: 0px;
+          left: 0px;
+          position: absolute;
+        }
+        &:hover{
+          background-color: #5FB4A2;
+          border: 1px solid #5FB4A2;
+        }
+        &:active{
+          background-color: #D2D8DB;
+          border: 1px solid #D2D8DB;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
